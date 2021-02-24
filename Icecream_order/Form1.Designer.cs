@@ -86,8 +86,11 @@ namespace Icecream_order
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.rbSize6 = new System.Windows.Forms.RadioButton();
             this.btnAdmin = new System.Windows.Forms.Button();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -95,7 +98,7 @@ namespace Icecream_order
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(48, 29);
+            this.dateTimePicker1.Location = new System.Drawing.Point(48, 55);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(355, 35);
             this.dateTimePicker1.TabIndex = 0;
@@ -104,7 +107,7 @@ namespace Icecream_order
             // 
             this.lbStore.AutoSize = true;
             this.lbStore.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbStore.Location = new System.Drawing.Point(48, 88);
+            this.lbStore.Location = new System.Drawing.Point(48, 114);
             this.lbStore.Name = "lbStore";
             this.lbStore.Size = new System.Drawing.Size(104, 28);
             this.lbStore.TabIndex = 1;
@@ -114,7 +117,7 @@ namespace Icecream_order
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbTime.Location = new System.Drawing.Point(48, 146);
+            this.lbTime.Location = new System.Drawing.Point(48, 172);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(104, 28);
             this.lbTime.TabIndex = 1;
@@ -133,7 +136,7 @@ namespace Icecream_order
             "Pyeongchon",
             "Bisan-Anyang",
             "Homeplus-Anyang"});
-            this.cbStore.Location = new System.Drawing.Point(171, 82);
+            this.cbStore.Location = new System.Drawing.Point(171, 108);
             this.cbStore.Name = "cbStore";
             this.cbStore.Size = new System.Drawing.Size(232, 36);
             this.cbStore.TabIndex = 2;
@@ -156,7 +159,7 @@ namespace Icecream_order
             "19:00",
             "20:00",
             "21:00"});
-            this.cbTime.Location = new System.Drawing.Point(171, 140);
+            this.cbTime.Location = new System.Drawing.Point(171, 166);
             this.cbTime.Name = "cbTime";
             this.cbTime.Size = new System.Drawing.Size(232, 36);
             this.cbTime.TabIndex = 2;
@@ -165,7 +168,7 @@ namespace Icecream_order
             // 
             this.imgLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
-            this.imgLogo.Location = new System.Drawing.Point(607, 12);
+            this.imgLogo.Location = new System.Drawing.Point(607, 38);
             this.imgLogo.Name = "imgLogo";
             this.imgLogo.Size = new System.Drawing.Size(180, 180);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -176,7 +179,7 @@ namespace Icecream_order
             // 
             this.lbInform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbInform.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbInform.Location = new System.Drawing.Point(1057, 115);
+            this.lbInform.Location = new System.Drawing.Point(1057, 141);
             this.lbInform.Name = "lbInform";
             this.lbInform.Size = new System.Drawing.Size(263, 28);
             this.lbInform.TabIndex = 5;
@@ -188,7 +191,7 @@ namespace Icecream_order
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 296);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 322);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1269, 531);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -203,7 +206,7 @@ namespace Icecream_order
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLogin.Location = new System.Drawing.Point(913, 29);
+            this.btnLogin.Location = new System.Drawing.Point(913, 55);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(190, 58);
             this.btnLogin.TabIndex = 3;
@@ -219,7 +222,7 @@ namespace Icecream_order
             this.btnJoin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJoin.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnJoin.ForeColor = System.Drawing.Color.White;
-            this.btnJoin.Location = new System.Drawing.Point(1127, 29);
+            this.btnJoin.Location = new System.Drawing.Point(1127, 55);
             this.btnJoin.Name = "btnJoin";
             this.btnJoin.Size = new System.Drawing.Size(190, 58);
             this.btnJoin.TabIndex = 3;
@@ -231,7 +234,7 @@ namespace Icecream_order
             // 
             this.lbOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbOrder.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbOrder.Location = new System.Drawing.Point(393, 816);
+            this.lbOrder.Location = new System.Drawing.Point(393, 863);
             this.lbOrder.Name = "lbOrder";
             this.lbOrder.Size = new System.Drawing.Size(686, 28);
             this.lbOrder.TabIndex = 5;
@@ -247,7 +250,7 @@ namespace Icecream_order
             this.btnOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrder.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnOrder.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnOrder.Location = new System.Drawing.Point(1100, 799);
+            this.btnOrder.Location = new System.Drawing.Point(1100, 846);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(220, 58);
             this.btnOrder.TabIndex = 3;
@@ -264,7 +267,7 @@ namespace Icecream_order
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLogout.Location = new System.Drawing.Point(913, 29);
+            this.btnLogout.Location = new System.Drawing.Point(913, 55);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(190, 58);
             this.btnLogout.TabIndex = 3;
@@ -281,7 +284,7 @@ namespace Icecream_order
             this.btnMyorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMyorder.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnMyorder.ForeColor = System.Drawing.Color.White;
-            this.btnMyorder.Location = new System.Drawing.Point(1127, 29);
+            this.btnMyorder.Location = new System.Drawing.Point(1127, 55);
             this.btnMyorder.Name = "btnMyorder";
             this.btnMyorder.Size = new System.Drawing.Size(190, 58);
             this.btnMyorder.TabIndex = 3;
@@ -295,7 +298,7 @@ namespace Icecream_order
             this.rbSize1.AutoSize = true;
             this.rbSize1.Checked = true;
             this.rbSize1.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize1.Location = new System.Drawing.Point(52, 270);
+            this.rbSize1.Location = new System.Drawing.Point(52, 296);
             this.rbSize1.Name = "rbSize1";
             this.rbSize1.Size = new System.Drawing.Size(157, 32);
             this.rbSize1.TabIndex = 8;
@@ -309,7 +312,7 @@ namespace Icecream_order
             // 
             this.rbSize2.AutoSize = true;
             this.rbSize2.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize2.Location = new System.Drawing.Point(254, 270);
+            this.rbSize2.Location = new System.Drawing.Point(254, 296);
             this.rbSize2.Name = "rbSize2";
             this.rbSize2.Size = new System.Drawing.Size(170, 32);
             this.rbSize2.TabIndex = 8;
@@ -322,7 +325,7 @@ namespace Icecream_order
             // 
             this.rbSize3.AutoSize = true;
             this.rbSize3.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize3.Location = new System.Drawing.Point(474, 270);
+            this.rbSize3.Location = new System.Drawing.Point(474, 296);
             this.rbSize3.Name = "rbSize3";
             this.rbSize3.Size = new System.Drawing.Size(126, 32);
             this.rbSize3.TabIndex = 8;
@@ -335,7 +338,7 @@ namespace Icecream_order
             // 
             this.rbSize4.AutoSize = true;
             this.rbSize4.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize4.Location = new System.Drawing.Point(655, 270);
+            this.rbSize4.Location = new System.Drawing.Point(655, 296);
             this.rbSize4.Name = "rbSize4";
             this.rbSize4.Size = new System.Drawing.Size(186, 32);
             this.rbSize4.TabIndex = 8;
@@ -348,7 +351,7 @@ namespace Icecream_order
             // 
             this.rbSize5.AutoSize = true;
             this.rbSize5.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize5.Location = new System.Drawing.Point(890, 270);
+            this.rbSize5.Location = new System.Drawing.Point(890, 296);
             this.rbSize5.Name = "rbSize5";
             this.rbSize5.Size = new System.Drawing.Size(162, 32);
             this.rbSize5.TabIndex = 8;
@@ -362,7 +365,7 @@ namespace Icecream_order
             this.lbSize.AutoSize = true;
             this.lbSize.BackColor = System.Drawing.Color.Beige;
             this.lbSize.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbSize.Location = new System.Drawing.Point(47, 230);
+            this.lbSize.Location = new System.Drawing.Point(47, 256);
             this.lbSize.Name = "lbSize";
             this.lbSize.Size = new System.Drawing.Size(392, 28);
             this.lbSize.TabIndex = 9;
@@ -374,7 +377,7 @@ namespace Icecream_order
             this.lbTaste.AutoSize = true;
             this.lbTaste.BackColor = System.Drawing.Color.Honeydew;
             this.lbTaste.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbTaste.Location = new System.Drawing.Point(47, 324);
+            this.lbTaste.Location = new System.Drawing.Point(47, 350);
             this.lbTaste.Name = "lbTaste";
             this.lbTaste.Size = new System.Drawing.Size(346, 28);
             this.lbTaste.TabIndex = 9;
@@ -449,7 +452,7 @@ namespace Icecream_order
             listViewItem59,
             listViewItem60});
             this.listView1.LargeImageList = this.imageList1;
-            this.listView1.Location = new System.Drawing.Point(48, 365);
+            this.listView1.Location = new System.Drawing.Point(48, 391);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1271, 411);
             this.listView1.TabIndex = 10;
@@ -497,7 +500,7 @@ namespace Icecream_order
             // 
             this.rbSize6.AutoSize = true;
             this.rbSize6.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rbSize6.Location = new System.Drawing.Point(1106, 270);
+            this.rbSize6.Location = new System.Drawing.Point(1106, 296);
             this.rbSize6.Name = "rbSize6";
             this.rbSize6.Size = new System.Drawing.Size(213, 32);
             this.rbSize6.TabIndex = 8;
@@ -514,7 +517,7 @@ namespace Icecream_order
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Location = new System.Drawing.Point(1127, 162);
+            this.btnAdmin.Location = new System.Drawing.Point(1127, 188);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(190, 58);
             this.btnAdmin.TabIndex = 3;
@@ -523,13 +526,39 @@ namespace Icecream_order
             this.btnAdmin.Visible = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
+            // pnlTop
+            // 
+            this.pnlTop.Controls.Add(this.btnClose);
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(1375, 40);
+            this.pnlTop.TabIndex = 11;
+            this.pnlTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseDown);
+            this.pnlTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseMove);
+            this.pnlTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseUp);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Thistle;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.Location = new System.Drawing.Point(1334, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(1374, 919);
+            this.ClientSize = new System.Drawing.Size(1374, 961);
+            this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lbTaste);
             this.Controls.Add(this.lbSize);
@@ -555,11 +584,14 @@ namespace Icecream_order
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTop.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -592,6 +624,8 @@ namespace Icecream_order
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.RadioButton rbSize6;
         private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

@@ -44,6 +44,9 @@ namespace Icecream_order
             this.lbEmail = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.btnChk = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -209,12 +212,38 @@ namespace Icecream_order
             this.btnChk.UseVisualStyleBackColor = false;
             this.btnChk.Click += new System.EventHandler(this.btnChk_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Thistle;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClose.Location = new System.Drawing.Point(533, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(40, 40);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pnlTop
+            // 
+            this.pnlTop.Controls.Add(this.btnClose);
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(573, 40);
+            this.pnlTop.TabIndex = 18;
+            this.pnlTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseDown);
+            this.pnlTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseMove);
+            this.pnlTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlTop_MouseUp);
+            // 
             // Join
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(571, 819);
+            this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.tbName);
@@ -230,10 +259,12 @@ namespace Icecream_order
             this.Controls.Add(this.btnChk);
             this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Join";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Join";
             this.Load += new System.EventHandler(this.Join_Load);
+            this.pnlTop.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +287,7 @@ namespace Icecream_order
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Button btnChk;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel pnlTop;
     }
 }

@@ -1,0 +1,16 @@
+D:\C#\Icecream_Order\Icecream_order\bin\Debug\Icecream_order.exe.config
+D:\C#\Icecream_Order\Icecream_order\bin\Debug\Icecream_order.exe
+D:\C#\Icecream_Order\Icecream_order\bin\Debug\Icecream_order.pdb
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.csprojAssemblyReference.cache
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Main.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Login.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Join.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Order.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.MyOrder.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Admin.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Delete.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.Properties.Resources.resources
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.csproj.GenerateResource.cache
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.csproj.CoreCompileInputs.cache
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.exe
+D:\C#\Icecream_Order\Icecream_order\obj\Debug\Icecream_order.pdb
