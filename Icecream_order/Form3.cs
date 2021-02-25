@@ -79,12 +79,16 @@ namespace Icecream_order
         private void btnJoin_Click(object sender, EventArgs e)
         {
             if (tbID.Text == "" || tbName.Text == "" || tbPwd.Text == "" || tbPhone.Text == "" || tbEmail.Text == "")
+            {
                 lbInform.Visible = true;
+                lbInform.Text = "모든 정보를 기입해주세요!";
+            }
+                
             else
             {
-                if(chkID != "")
+                if (chkID != "")
                 {
-                    if(noID != "")
+                    if (noID != "")
                     {
                         lbInform.Visible = true;
                         lbInform.Text = "아이디 중복여부를 확인해주세요.";
@@ -95,7 +99,7 @@ namespace Icecream_order
                         sCmd.CommandText = sInsert;
                         sCmd.ExecuteNonQuery();
                         lbInform.Text = "가입이 완료되었습니다!";
-                    }     
+                    }
                 }
                 else
                 {

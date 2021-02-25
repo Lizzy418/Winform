@@ -72,7 +72,9 @@ namespace Icecream_order
             //암호 틀렸을 경우
             else if (sPwd != str && str != "") lbInform.Text = "암호를 다시 입력해주세요.";
             //DB에 아이디가 없는 경우
-            else lbInform.Text = "회원가입 정보가 없습니다. \n\r 먼저 가입해 주세요.";
+            else if (sID != "" && sPwd !="" && str=="")
+                lbInform.Text = "회원가입 정보가 없습니다. \n\r 먼저 가입해 주세요.";
+            else if (sID == "" || sPwd == "") lbInform.Text = "아이디와 비밀번호를 입력하세요";
         }
 
         Point fPt;
